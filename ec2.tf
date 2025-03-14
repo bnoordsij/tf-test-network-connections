@@ -12,8 +12,7 @@ resource "aws_instance" "my-ec2" {
   subnet_id = aws_subnet.my_subnet.id
   vpc_security_group_ids = [
     aws_security_group.my_sg.id,
-    aws_security_group.my_sg_http.id,
-    aws_security_group.my_sg_https.id
+    aws_security_group.my_sg_http.id
   ]
 
   user_data = file("${path.module}/ec2-user-data.sh")
