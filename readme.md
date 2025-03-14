@@ -2,7 +2,7 @@
 
 run these commands
 ```bash
-./secrets/generate-id-rç
+./secrets/generate-id-rsa.sh
 terraform init
 terraform apply
 ```
